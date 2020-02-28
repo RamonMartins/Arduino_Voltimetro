@@ -9,7 +9,7 @@ void setup() {
 void loop() {
   medV = 0;
   for(int x = 0; x < 10; x++){
-    volt = (analogRead(bat1)*5.0)/1024.0;
+    volt = (analogRead(bat1)*5.0)/1024.0; // Para afinar o valor da medição final, basta aumentar ou diminuir aos poucos o valor de 1024.0
     medV = medV + volt;
     delay(100);
   }
